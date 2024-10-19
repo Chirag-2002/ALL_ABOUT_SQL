@@ -1,0 +1,36 @@
+                                                 ##  WELCOME TO THE SQL ##
+
+In this SQL I have used a basic sql query for practice by making a college database .
+
+------------------------------------Query that I have used --------------------------------------------------------
+
+1) CREATE DATABASE database_name;
+2) SHOW DATABASES;
+3) USE database_name;
+4) DROP DATABASE IF EXISTS database_name;
+5) CREATE TABLE table_name(
+column_name1 datatype(size) Constraint ,
+column_name2 datatype(size) Constraint);
+6) DROP TABLE table_name;
+7) DESC table_name;
+8) INSERT INTO table_name(column_name1,column_name2) VALUES (value1 , value 2 , etc);
+9)  SELECT * FROM table_name;
+10) SELECT * FROM table_name ORDER BY DESC; 
+11) SELECT * FROM table_name LIMIT value;
+12) SELECT * FROM table_name WHERE column_name LIKE "filter";
+13) SELECT column_name FROM table_name WHERE conditions ; 
+14) UPDATE table_name SET column_name WHERE conditons;
+15) DELETE FROM table_name WHERE conditions
+
+
+-----------------------------------------------THINGS I GOT TO KNOW FIRST TIME--------------------------------------------
+
+1) While updating/deleting use a WHERE clause with a KEY column 
+E.g. UPDATE table_name SET column_name = value WHERE KEY_column = value ; 
+without using this command you will get a safe mode error means this mode prevents our data to delete/update accidently without using WHERE clause & WHERE with KEY columns
+
+2) To avoid this you can temporarily disable safe mode OR permanatly disable by going the preferance ---> editor 
+
+Command for temporarily disable safe mode :
+
+SET SQL_SAFE_UPDATES = 0;
